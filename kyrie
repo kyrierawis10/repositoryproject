@@ -1,0 +1,41 @@
+git commit -m "Initial commit - basic website structure"
+git push origin main
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "project_db";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+</main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
